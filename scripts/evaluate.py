@@ -9,7 +9,7 @@ def main():
     model = joblib.load("model.pkl")
     score = model.score(X, y)
 
-    with open("results/score.txt", "w") as f:
+    with open("results/score.txt", "x") as f:
         f.write(f"Model R^2 skoru: {score}\n")
 
     print(f"Model başarı skoru: {score}")
