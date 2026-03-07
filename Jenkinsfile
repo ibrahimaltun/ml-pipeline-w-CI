@@ -32,11 +32,11 @@ pipeline {
             }
         }
 
-        // stage('Deploy') {
-        //     steps {
-        //         sh './venv/bin/python scripts/deploy.py'
-        //     }
-        // }
+        stage('Deploy') {
+             steps {
+                 sh './venv/bin/python scripts/deploy.py'
+             }
+         }
     }
 
     post {
